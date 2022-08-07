@@ -11,7 +11,7 @@ my name is alex
 
 [link to github](http://www.github.com)
 
-`code`
+`variable`
 
 ```python
 num = random.randint(1, 10)
