@@ -10,11 +10,12 @@ antonyms = ['cold', 'winter', 'soft', 'wet', 'complex', 'darkness',
 n = 1
 max = 16
 
+#can only ask 8 questions, 10 questions goes past word amount
 for i in range(8):
     first = random.randint(0, max)
     second = random.randint(0, max)
 
-    print('Q' + str(n) + ':', words[first], 'is to', antonyms[first], 'as', antonyms[second], 'is to ... ?')
+    print('Q' + str(n) + ':', words[first].capitalize(), 'is to', antonyms[first], 'as', antonyms[second], 'is to ... ?')
     answer = input("Answer: ")
     if answer == words[second]:
         print("Correct!")
