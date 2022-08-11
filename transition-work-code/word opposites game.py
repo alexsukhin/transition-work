@@ -9,6 +9,7 @@ antonyms = ['cold', 'winter', 'soft', 'wet', 'complex', 'darkness',
 
 n = 1
 max = 16
+count = 0
 
 #can only ask 8 questions, 10 questions goes past word amount
 for i in range(8):
@@ -19,8 +20,9 @@ for i in range(8):
     answer = input("Answer: ")
     if answer == words[second]:
         print("Correct!")
+        count += 1
     else:
-        print("Wrong.")
+        print("Wrong. Answer was", words[second])
 
     unwanted = [first, second]
 
@@ -30,4 +32,6 @@ for i in range(8):
 
     n += 1
     max -= 2
+
+print("You got", str(count), "correct!")
 
